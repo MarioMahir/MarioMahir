@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @MarioMahir
 - 👀 For now I am interested in learning Python, SQL and C#
-- 🌱 I’m currently learning SQL
+- 🌱 I’m currently learning SQL and C#
 - 📫 How to reach me: Coming Soon...
 - ⚡ Fun fact: I´m from 🇩🇴
 
