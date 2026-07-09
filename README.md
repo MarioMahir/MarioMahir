@@ -67,6 +67,14 @@ A desktop application that combines Electron and C#/.NET to deliver a modern med
 **Tech:** Electron, C#, .NET, HTML, CSS, JavaScript, yt-dlp
 
 ---
+
+### 🔗 LinkShortener
+A production-oriented URL shortener built with **ASP.NET Core** following **Onion Architecture** (Domain, Application, Infrastructure, Web). Features secure authentication, analytics dashboards, Redis cache-aside, asynchronous click processing with Background Services, GeoIP location, device detection, logging with Serilog, rate limiting, and comprehensive unit/integration testing. Designed with scalability, maintainability, and clean architecture principles in mind.
+
+**Tech:** C#, ASP.NET Core, Entity Framework Core, SQL Server, Redis, ASP.NET Core Identity, Serilog, xUnit, Moq, GeoIP2.
+
+---
+
 <!--
 
 ### 🌐 LinkUp Pro
