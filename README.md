@@ -1,122 +1,93 @@
-# Hi there! 👋 I'm Mario Alejandro Sabala Encarnación
+# Hi, I'm Mario Alejandro Sabala Encarnación 👋
 
-**Software Developer** focused on building web applications, REST APIs, business management systems and automation solutions using the .NET ecosystem.
+**Software developer** focused on the .NET ecosystem: web applications, REST APIs, business systems and data pipelines with **C#**, **ASP.NET Core**, **Entity Framework Core** and **SQL Server**.
 
-I'm currently studying Software Development at **ITLA (Instituto Tecnológico de las Américas)** and continuously improving my skills in backend development, cloud technologies and software architecture.
-
----
-
-## 🚀 About Me
-
-* 💻 Backend developer focused on **C#** and **ASP.NET Core**
-* 🌐 Building web applications and REST APIs
-* ⚙️ Passionate about automation with **Python** and **n8n**
-* 🗄️ Experienced with **Entity Framework Core** and **SQL Server**
-* ☁️ Currently learning **Microsoft Azure** and Cloud Computing
-* 📚 Always learning new technologies to solve real-world problems
+Software Development student at **ITLA (Instituto Tecnológico de las Américas)**, Santo Domingo. I like building complete systems end to end: clean architecture, real business rules, automated tests and documentation that lets anyone run the project.
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Backend
-
-* C#
-* ASP.NET Core
-* Entity Framework Core
-* REST APIs
-* SQL Server
-
-### Frontend
-
-* HTML
-* CSS
-* JavaScript
-* Bootstrap
-
-### Programming & Data
-
-* Python
-* Pandas
-* Scikit-learn
-
-### Tools
-
-* Git
-* GitHub
-* Visual Studio
-* VS Code
-* Postman
-* n8n
+| Area | Technologies |
+|---|---|
+| **Backend** | C#, ASP.NET Core MVC and Web API, Entity Framework Core (Code First), ASP.NET Core Identity, JWT, SignalR, MediatR (CQRS), FluentValidation, AutoMapper, Serilog, Azure Functions, Worker Services |
+| **Data** | SQL Server, ADO.NET, star-schema data warehouses, ETL processes |
+| **Frontend** | HTML, CSS, JavaScript, Bootstrap, Chart.js, Razor Views |
+| **Testing** | xUnit, Moq, SQLite in-memory and EF Core InMemory |
+| **Automation and analysis** | Python, Pandas, scikit-learn, n8n |
+| **Tools** | Git, GitHub, Visual Studio, VS Code, Postman, Swagger, Docker |
 
 ---
 
 ## 📌 Featured Projects
 
-### 💈 BarberFlow
+### 🏦 [Artemis Banking Pro](https://github.com/MarioMahir/ArtemisBankingPro)
 
-A barber shop management system designed to help businesses manage appointments, customers and services through an intuitive web application.
+Banking platform built with **Onion Architecture and CQRS (MediatR)**. An **MVC WebApp** for administrators, tellers and clients (users, loans with amortization tables, credit cards, savings accounts, beneficiaries, transfers and payments with confirmation and e-mail), a **REST WebAPI** with JWT for administrators and merchants (including the *Hermes Pay* payment processor), an **Azure Function** that marks overdue installments, and **339 unit and integration tests**.
 
-**Tech:** C#, ASP.NET Core, Entity Framework Core, SQL Server
+**Tech:** ASP.NET Core 9, Identity, JWT, EF Core, MediatR, FluentValidation, AutoMapper, Serilog, MailKit, Azure Functions, xUnit, Moq
 
----
-
-### 🖥️ YtDownloader
-A desktop application that combines Electron and C#/.NET to deliver a modern media downloader, showcasing desktop development, external tool integration and responsive UI design.
-
-**Tech:** Electron, C#, .NET, HTML, CSS, JavaScript, yt-dlp
+<a href="https://github.com/MarioMahir/ArtemisBankingPro"><img src="https://raw.githubusercontent.com/MarioMahir/ArtemisBankingPro/main/docs/admin-home-datos.png" alt="Artemis Banking Pro" width="720"></a>
 
 ---
 
-### 🔗 LinkShortener
-A production-oriented URL shortener built with **ASP.NET Core** following **Onion Architecture** (Domain, Application, Infrastructure, Web). Features secure authentication, analytics dashboards, Redis cache-aside, asynchronous click processing with Background Services, GeoIP location, device detection, logging with Serilog, rate limiting, and comprehensive unit/integration testing. Designed with scalability, maintainability, and clean architecture principles in mind.
+### 🏠 [RealEstateApp](https://github.com/MarioMahir/RealEstateApp)
 
-**Tech:** C#, ASP.NET Core, Entity Framework Core, SQL Server, Redis, ASP.NET Core Identity, Serilog, xUnit, Moq, GeoIP2.
+Real estate platform with an **MVC WebApp** for clients, agents and administrators (property listings with filters and favorites, property management with images and improvements, agent and admin dashboards) and a **JWT-protected WebAPI** for administrators and developers, documented with Swagger. Both share the same database and Identity users.
 
----
+**Tech:** ASP.NET Core 9, Onion Architecture, Identity, JWT, EF Core, AutoMapper, Swagger
 
-<!--
-
-### 🌐 LinkUp Pro
-
-A social networking web application featuring authentication, user management and social interaction functionalities built with ASP.NET Core.
-
-**Tech:** C#, ASP.NET Core MVC, Entity Framework Core, SQL Server
+<a href="https://github.com/MarioMahir/RealEstateApp"><img src="https://raw.githubusercontent.com/MarioMahir/RealEstateApp/main/docs/home-publico.png" alt="RealEstateApp" width="720"></a>
 
 ---
 
-### 🗳️ eVote360
+### 🗳️ [eVote360 Pro](https://github.com/MarioMahir/eVote360-Pro)
 
-A voting system developed using a layered architecture, following clean software design principles and best development practices.
+Electronic voting system covering the full electoral cycle: election setup by the administrator, candidates and political alliances managed by party leaders, and citizen voting with **ID card validation through OCR (Tesseract)** and a verification code sent by e-mail. Results per position once the election closes.
 
-**Tech:** C#, .NET, Entity Framework Core, SQL Server
+**Tech:** ASP.NET Core 9 MVC, Onion Architecture, Identity, EF Core, Tesseract OCR, MailKit
+
+<a href="https://github.com/MarioMahir/eVote360-Pro"><img src="https://raw.githubusercontent.com/MarioMahir/eVote360-Pro/main/docs/resultados.png" alt="eVote360 Pro" width="720"></a>
 
 ---
 
-### 📦 ImportCostPro
+### 📦 [ImportCost Pro](https://github.com/MarioMahir/ImportCostPro)
 
-A business application focused on import management, providing efficient CRUD operations and database management.
+Import cost management for an importing company. Master data (countries, currencies, importers, suppliers, products, tariff categories, exchange rates), import orders with products and expenses, and a **landed cost engine**: currency conversion with the rate in force, expense allocation by FOB value, weight, volume or quantity, CIF, tariff, selective tax, customs service fee, ITBIS, unit cost and suggested selling price. The official calculation is stored with every value used, and orders are locked once calculated and closed.
 
-**Tech:** ASP.NET Core, SQL Server, Entity Framework Core
+**Tech:** ASP.NET Core 9 MVC, EF Core, SQL Server, Bootstrap
+
+<a href="https://github.com/MarioMahir/ImportCostPro"><img src="https://raw.githubusercontent.com/MarioMahir/ImportCostPro/main/docs/landedcost-oficial.png" alt="ImportCost Pro" width="720"></a>
+
+---
+
+### 📊 [Sistema de Análisis de Opiniones](https://github.com/MarioMahir/SistemaAnalisisOpiniones)
+
+**ETL process as a .NET 8 Worker Service** that extracts customer opinions from three sources in parallel (CSV files, a SQL Server database and a REST API), validates and loads a staging area, classifies sentiment with a keyword-based classifier, and populates a **star-schema data warehouse**. Includes KPI queries and a **dashboard in ASP.NET Core + Chart.js** with satisfaction trends by product, channel and month.
+
+**Tech:** .NET 8 Worker Service, ADO.NET, CsvHelper, SQL Server, ASP.NET Core Minimal API, Chart.js, xUnit
+
+<a href="https://github.com/MarioMahir/SistemaAnalisisOpiniones"><img src="https://raw.githubusercontent.com/MarioMahir/SistemaAnalisisOpiniones/main/docs/capturas/dashboard-completo.png" alt="Sistema de Análisis de Opiniones" width="720"></a>
+
+---
+
+### ✅ [TaskAPI](https://github.com/MarioMahir/TaskAPI)
+
+Task management REST API with **JWT authentication**, **real-time notifications through SignalR** and a **reactive processing queue** built with System.Reactive. Documented with Swagger and covered by xUnit tests.
+
+**Tech:** ASP.NET Core 8 Web API, JWT, SignalR, System.Reactive, EF Core, xUnit
 
 ---
 
 ## 🎯 Current Goals
 
 * Earn Microsoft Azure certifications
-* Continue building real-world software projects
-* Expand my experience in backend development and cloud technologies
-* Work on freelance projects and professional software solutions
+* Keep building complete, production-oriented software
+* Grow in backend architecture, cloud and data engineering
 
 ---
---->
+
 ## 📫 Let's Connect
 
-- 💼 LinkedIn: www.linkedin.com/in/mario-alejandro-sabala-encarnación-503324324
-- 💻 GitHub: https://github.com/MarioMahir
-
-
-<!---
-MarioMahir/MarioMahir is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+* 💼 LinkedIn: [mario-alejandro-sabala-encarnación](https://www.linkedin.com/in/mario-alejandro-sabala-encarnaci%C3%B3n-503324324)
+* 💻 GitHub: [MarioMahir](https://github.com/MarioMahir)
